@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="src\public\favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>CeritaVincent</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-header container">
+        <a href="#main-content" class="skip-to-content" tabindex="0">Skip to content</a>
+        <a class="brand-name" href="#/">CeritaVincent</a>     
+        <button id="drawer-button" class="drawer-button">☰</button>
+        <nav id="navigation-drawer" class="navigation-drawer">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li><button id="logout-button" style="display: none;">Logout</button></li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content"></main>
+    <div id="loading-indicator" class="loading hidden" aria-hidden="true">
+      <div class="spinner"></div>
+    </div>
+  </body>
+</html>

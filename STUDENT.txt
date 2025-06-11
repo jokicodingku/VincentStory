@@ -1,0 +1,3 @@
+APP_URL=<url_aplikasi>
+MAP_SERVICE_API_KEY=734bff584dcd48bbacb0e42139a0cca7
+URL DEPLOY APP= https://gentle-choux-2355a1.netlify.app
