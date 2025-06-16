@@ -1,0 +1,19 @@
+{
+  "id": "cerita-vincent-v1",
+  "start_url": "./index.html",
+  "scope": ".",
+  "name": "CeritaVincent App",
+  "short_name": "CeritaVincent",
+  "description": "Aplikasi CeritaVincent adalah aplikasi berbagi cerita berupa gambar, deskripsi, dan lokasi berbasis web",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "./icon/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}
