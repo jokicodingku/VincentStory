@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="src\public\favicon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="manifest" href="public/app.webmanifest">
+    <link rel="manifest" href="/app.webmanifest">
     <title>CeritaVincent</title>
   </head>
   <body>
@@ -31,16 +31,16 @@
     </div>
 
     <script>
-      // Register Service Worker
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
-              console.log('Service Worker registered successfully:', registration);
-            })
-            .catch((error) => {
-              console.log('Service Worker registration failed:', error);
+        window.addEventListener('load', async () => {
+          try {
+            const registration = await navigator.serviceWorker.register('./sw.js', {
+              scope: '.'
             });
+            console.log('SW registered: ', registration);
+          } catch (error) {
+            console.log('SW registration failed: ', error);
+          }
         });
       }
     </script>
